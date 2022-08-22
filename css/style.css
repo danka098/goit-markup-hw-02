@@ -1,9 +1,14 @@
-* {
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --active-elements-color: #2196f3;
+}
+body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 .menu__link,
 .header__contact-link {
@@ -13,32 +18,33 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.menu__link {
+  color: var(--main-color);
+}
 .header__contact-link {
-  color: #757575;
+  color: var(--secondary-color);
 }
 .menu__link:hover,
 .header__contact-link:hover,
-.footer__contact-link:hover {
-  color: #2196f3;
+.footer__contact-link:hover,
+.logo-highlight {
+  color: var(--active-elements-color);
 }
 .header__link-logo,
 .footer__link-logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   text-decoration: none;
-}
-.logo-highlight {
-  color: #2196f3;
+  color: var(--main-color);
 }
 .banner {
   width: 1600px;
   height: 600px;
   background: #2f303a;
 }
-
 .banner__title {
   font-weight: 900;
   font-size: 44px;
@@ -49,6 +55,8 @@
   color: #ffffff;
 }
 .btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   align-items: center;
   text-align: center;
   border-radius: 4px;
@@ -58,7 +66,7 @@
 .btn--banner {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--active-elements-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   line-height: 1.875;
@@ -73,7 +81,7 @@
 .feature__text {
   font-size: 14px;
   line-height: 1.714;
-  color: #757575;
+  color: var(--secondary-color);
 }
 .projects__title,
 .team__title {
@@ -84,13 +92,14 @@
 }
 .team__member-name {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.188;
   text-align: center;
 }
 .team__member-position {
   line-height: 1.188;
   text-align: center;
-  color: #757575;
+  color: var(--secondary-color);
 }
 .footer__address {
   font-size: 14px;
@@ -114,7 +123,7 @@
   background: #f5f4fa;
 }
 .gallery__filter-btn:hover {
-  background-color: #2196f3;
+  background-color: var(--active-elements-color);
   color: #ffffff;
 }
 .projects__name {
@@ -125,5 +134,5 @@
 }
 .projects__undertitle {
   line-height: 1.875;
-  color: #757575;
+  color: var(--secondary-color);
 }
