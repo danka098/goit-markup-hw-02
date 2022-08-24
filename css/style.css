@@ -25,8 +25,11 @@ body {
   color: var(--secondary-color);
 }
 .menu__link:hover,
+.menu__link:focus,
 .header__contact-link:hover,
+.header__contact-link:focus,
 .footer__contact-link:hover,
+.footer__contact-link:focus,
 .logo-highlight {
   color: var(--active-elements-color);
 }
@@ -122,7 +125,8 @@ body {
   padding: 6px 22px;
   background: #f5f4fa;
 }
-.gallery__filter-btn:hover {
+.gallery__filter-btn:hover,
+.gallery__filter-btn:focus {
   background-color: var(--active-elements-color);
   color: #ffffff;
 }
